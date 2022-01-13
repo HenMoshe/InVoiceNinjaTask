@@ -2,7 +2,8 @@ import { useState } from 'react'
 function AddWord({words, addWord}){
     let [newWord, setNewWord] = useState('')
     function handleWordAdd(e, addWord, newWord){
-        e.preventDefault()
+        e.preventDefault()                          /*   A component that used for adding words to the selection list.
+                                                                                                                        */
         addWord([...words, newWord])
         setNewWord('')
     }
